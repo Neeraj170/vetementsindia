@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MensWear</title>
+</head>
+<style>
+    body {
+    background-image: url(background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Festive', cursive;
+    font-family: 'Oswald', sans-serif
+}
+    html{
+    scroll-behavior: smooth;
+}
+/* navbar section */
+#navbarcontainer{
+    display: flex;
+    background-color: rgb(104, 127, 134);
+    border-radius: 50px;
+    position: sticky;
+    top: 0px;
+    opacity: 0.8;
+    
+    
+}
+#logo img{
+    width: 90px;   
+    padding: 15px 20px; 
+    height: 60px; 
+    padding-top: 24px;
+}
+#navbar ul{
+    display: flex;
+    
+}
+#navbar ul li{
+    list-style: none;
+    padding: 15px 10px;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    border-radius: 20px;
+    padding:0px 5px;
+}
+    .full{
+        display: flex;
+    }
+    .jackets{
+        display:grid;
+
+    }
+    .total:hover{
+        color: white;
+        background-color: black;
+        
+        
+    }
+    .total{
+        
+        
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 5px;
+        cursor: pointer;
+    }
+    .name{
+        font-size: 20px;
+        padding-bottom: 3px ;
+    }
+    .info{
+        font-size: 18px;
+    }
+    img{
+        border-radius: 10px;
+        
+        width: 277px;
+    }
+    .price{
+        font-size: 20px;
+    }
+    
+
+</style>
+<body>
+    <div id="navbarcontainer">
+        <div id="logo"><img src="/logo/logovet.png" alt="MyFashionStore"></div>
+        <div id="navbar">
+            <ul>
+                <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Rubik+Glitch&family=Satisfy&family=Skranji&family=Smooch&display=swap" rel="stylesheet">
+               <li class="item"><a href="/index.html" >Home</a></li>
+                <li class="item"><a href="#servicess">Shop</a></li>
+                <li class="item"><a href="#aboutus">About us</a></li>
+                <li class="item"><a href="#contact">Contact us</a></li>
+                <li class="item"><a href="#animate">Order Now</a></li>
+                <li class="item"><a href="signin.html">Sign up</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="full" >
+    <div class="total" onclick="men1()">
+    <div class="jackets">
+        <img src="1men.webp" alt="VETEMENTS">
+       
+    </div>
+    <span class="name"><b>HubberHolme</b></span><br>
+    <span class="info">Solid denim jacket</span><br>
+    <span class="price"><b>Rs.999 </b><strike> Rs.1999</strike> (50%off)
+    </span><br>
+    </div>
+    
+    
+    <div class="total" onclick="men2()">
+        <div class="jackets">
+            <img src="2men.webp" alt="VETEMENTS">
+           
+        </div>
+        <span class="name"><b>Roadster</b></span><br>
+        <span class="info">Men Solid denim jacket</span><br>
+        <span class="price"><b>Rs.1549 </b><strike> Rs.3099</strike> (50%off)
+        </span><br>
+    </div>
+    <div class="total" onclick="men3()">
+        <div class="jackets">
+            <img src="3men.webp" alt="VETEMENTS">
+           
+        </div>
+        <span class="name"><b>The Souled Store</b></span><br>
+        <span class="info">Solid denim jacket</span><br>
+        <span class="price"><b>Rs.1349 </b><strike> Rs.2499</strike> (Rs 1150 off)
+        </span><br>
+        </div>
+    <div class="total" onclick="men4()">
+     <div class="jackets">
+        <img src="4men.webp" alt="VETEMENTS">
+               
+     </div>
+     <span class="name"><b>WROGN</b></span><br>
+     <span class="info">Solid Biker jacket</span><br>
+     <span class="price"><b>Rs.2024 </b><strike> Rs.4499</strike>(50%off)
+    </span><br>
+    </div>
+    <div class="total" onclick="men5()">
+    <div class="jackets">
+        <img src="5men.webp" alt="VETEMENTS">
+                   
+        </div>
+        <span class="name"><b>Roadster</b></span><br>
+        <span class="info">Solid denim jacket</span><br>
+        <span class="price"><b>Rs.1499 </b><strike> Rs.2999</strike> (50%off)
+        </span><br></div>
+</div>
+<div class="full">
+    <div class="total" onclick="men6()">
+    <div class="jackets">
+        <img src="men6.webp" alt="VETEMENTS">
+       
+    </div>
+    <span class="name"><b>Roadster</b></span><br>
+    <span class="info">Men Skinny Fit Jeans</span><br>
+    <span class="price"><b>Rs.999 </b><strike> Rs.1999</strike> (50%off)
+    </span><br>
+    </div>
+    
+    
+    <div class="total" onclick="men7()">
+        <div class="jackets">
+            <img src="men7.webp" alt="VETEMENTS">
+           
+        </div>
+        <span class="name"><b>WROGN</b></span><br>
+        <span class="info">Men Skinny Fit Jeans</span><br>
+        <span class="price"><b>Rs.1819 </b><strike> Rs.2799</strike> (50%off)
+        </span><br>
+    </div>
+    <div class="total" onclick="men8()">
+        <div class="jackets">
+            <img src="men8.webp" alt="VETEMENTS">
+           
+        </div>
+        <span class="name"><b>Roadster</b></span><br>
+        <span class="info">Men Skinny Fit Jeans</span><br>
+        <span class="price"><b>Rs.2779 </b><strike> Rs.2499</strike> (20%off)
+        </span><br>
+        </div>
+    <div class="total" onclick="men9()">
+     <div class="jackets">
+        <img src="men9.webp" alt="VETEMENTS">
+               
+     </div>
+     <span class="name"><b>Van Heusen</b></span><br>
+     <span class="info">Men Slim Fit Trousers</span><br>
+     <span class="price"><b>Rs.1494 </b><strike> Rs.2299</strike>(50%off)
+    </span><br>
+    </div>
+    <div class="total" onclick="men10()">
+    <div class="jackets">
+        <img src="men10.webp" alt="VETEMENTS">
+                   
+        </div>
+        <span class="name"><b>INVICTOUS</b></span><br>
+        <span class="info">Men Formal Trousers</span><br>
+        <span class="price"><b>Rs.799 </b><strike> Rs.1999</strike> (60%off)
+        </span><br></div>
+</div>
+<div class="full">
+    <div class="total" onclick="men11()">
+    <div class="jackets">
+        <img src="men11.webp" alt="VETEMENTS">
+       
+    </div>
+    <span class="name"><b>Roadster</b></span><br>
+    <span class="info">Cotton checked casual shirt </span><br>
+    <span class="price"><b>Rs.599 </b><strike> Rs.1499</strike> (60%off)
+    </span><br>
+    </div>
+    
+    
+    <div class="total" onclick="men12()">
+        <div class="jackets">
+            <img src="men12.webp" alt="VETEMENTS">
+           
+        </div>
+        <span class="name"><b>Roadster</b></span><br>
+        <span class="info">Men cotton casual shirt</span><br>
+        <span class="price"><b>Rs.824 </b><strike> Rs.1499</strike> (45%off)
+        </span><br>
+    </div>
+    <div class="total" onclick="men13()">
+        <div class="jackets">
+            <img src="men13.webp" alt="VETEMENTS">
+           
+        </div>
+        <span class="name"><b>HIGHLANDER</b></span><br>
+        <span class="info">Slim fit casual shirt</span><br>
+        <span class="price"><b>Rs.493 </b><strike> Rs.1049</strike> (53%off)
+        </span><br>
+        </div>
+    <div class="total" onclick="men14()">
+     <div class="jackets">
+        <img src="men14.webp" alt="VETEMENTS">
+               
+     </div>
+     <span class="name"><b>Roadster</b></span><br>
+     <span class="info">Men cotton casual shirt</span><br>
+     <span class="price"><b>Rs.974 </b><strike> Rs.1499</strike>(35%off)
+    </span><br>
+    </div>
+    <div class="total" onclick="men15()">
+    <div class="jackets">
+        <img src="men15.webp" alt="VETEMENTS">
+                   
+        </div>
+        <span class="name"><b>Roadster</b></span><br>
+        <span class="info">Cotton striped shirt</span><br>
+        <span class="price"><b>Rs.999 </b><strike> Rs.1999</strike> (50%off)
+        </span><br></div>
+</div>
+<script>
+    function men1()
+    {
+        window.location.href="men1.html";
+    }
+    function men2()
+    {
+        window.location.href="men2.html";
+    }
+    function men3()
+    {
+        window.location.href="men3.html";
+    }
+    function men4()
+    {
+        window.location.href="men4.html";
+    }
+    function men5()
+    {
+        window.location.href="men5.html";
+    }
+    function men6()
+    {
+        window.location.href="men6.html";
+    }
+    function men7()
+    {
+        window.location.href="men7.html";
+    }
+    function men8()
+    {
+        window.location.href="men8.html";
+    }
+    function men9()
+    {
+        window.location.href="men9.html";
+    }
+    function men10()
+    {
+        window.location.href="men10.html";
+    }
+    function men11()
+    {
+        window.location.href="men11.html";
+    }
+    function men12()
+    {
+        window.location.href="men12.html";
+    }
+    function men13()
+    {
+        window.location.href="men13.html";
+    }
+    function men14()
+    {
+        window.location.href="men14.html";
+    }
+    function men15()
+    {
+        window.location.href="men15.html";
+    }
+</script>
+</body>
+</html>

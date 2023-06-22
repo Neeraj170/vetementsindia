@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vetements</title>
+    <style>
+        body {
+    background-image: url(background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Festive', cursive;
+    font-family: 'Oswald', sans-serif
+}
+    img {
+
+    border-radius: 10px;
+    height: 660px;
+    padding: 18px;
+    
+    
+    border: 2px solid black;
+}
+body {
+    display: flex;
+}
+
+.name {
+    font-size: 40px;
+    margin-left: 221px;
+    margin-top: 221px;
+    
+}
+.info {
+    padding-top: 268px;
+    position: absolute;
+    font-size: 35px;
+    padding-left: 755px;
+}
+.price{
+    padding-top: 312px;
+    position: absolute;
+    font-size: 35px;
+    padding-left: 755px;
+}
+.btn {
+    font-size: 25px;
+    border-radius: 5px;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 500px;
+    margin-left: 756px;
+}
+.btn:hover{
+    color: white;
+    background-color: black;
+    
+}
+.size {
+    position: absolute;
+    font-size: 29px;
+    margin-top: 390px;
+    margin-left: 756px;
+    
+}
+.select {
+    position: absolute;
+    font-size: 29px;
+    margin-top: 435px;
+    margin-left: -170px;
+    cursor: pointer;
+    
+}
+.select:focus{
+    color: white;
+    background-color: black;
+}
+#size1{
+    border-radius: 6px;
+}
+#size2 {
+    margin-left: -115px;
+    border-radius: 6px;
+}
+#size3 {
+    margin-left: -60px;
+    border-radius: 6px;
+}
+#size4 {
+    margin-left: -0px;
+    border-radius: 6px;
+}
+#size5{
+    margin-left: 60px;
+    border-radius: 6px;
+}
+.back{
+    font-size: 25px;
+    border-radius: 5px;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 500px;
+    margin-left: 900px;
+    
+}
+.back:hover{
+    color: white;
+    background-color: black;
+}
+    </style>
+</head>
+<body>
+    <img src="men8.webp" alt="VETEMENTS">
+           
+</div class="men">
+<span class="name"><b>Roadster</b></span><br>
+<span class="info">Men Skinny Fit Jeans</span><br>
+<span class="price"><b>Rs.2779 </b><strike> Rs.2499</strike> (20%off)
+</span><br>
+</div>
+<span class="size">Select Size:</span>
+<div>
+    <button class="select" id="size1">28</button>
+    <button class="select" id="size2">30</button>
+    <button class="select" id="size3">32</button> 
+   <button class="select" id="size4">34</button>
+    <button class="select" id="size5">36</button>
+</div>
+<button class="btn">Order Now</button>
+<button class="back" onclick="back()">Go Back </button>
+<script>
+    function back(){
+        window.location.href="mensfile.html";
+    }
+</script>
+</body>
+</html>

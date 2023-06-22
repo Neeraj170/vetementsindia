@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Accesories</title>
+</head>
+<style>
+    body {
+    background-image: url(background.jpg);
+    background-attachment: fixed;
+    background-size: cover;
+    font-family: 'Festive', cursive;
+    font-family: 'Oswald', sans-serif
+}
+    html{
+    scroll-behavior: smooth;
+}
+/* navbar section */
+#navbarcontainer{
+    display: flex;
+    background-color: rgb(104, 127, 134);
+    border-radius: 50px;
+    position: sticky;
+    top: 0px;
+    opacity: 0.8;
+    
+    
+}
+#logo img{
+    width: 90px;   
+    padding: 15px 20px; 
+    height: 60px; 
+}
+#navbar ul{
+    display: flex;
+    
+}
+#navbar ul li{
+    list-style: none;
+    padding: 15px 10px;
+    font-size: 1.5rem;
+}
+#navbar ul li a{
+    font-family: 'Oswald', sans-serif;
+    font-size: 30px;
+    text-decoration: none;
+    color: black;
+}
+#navbar ul li a:hover{
+    background-color: white;
+    border-radius: 20px;
+    padding:0px 5px;
+}
+    .full{
+        display: flex;
+    }
+    .jackets{
+        display:grid;
+
+    }
+    .total:hover{
+        color: white;
+        background-color: black;
+        
+        
+    }
+    .total{
+        
+        
+        border: 2px solid black;
+        padding: 5px;
+        border-radius: 10px;
+        margin: 5px;
+        cursor: pointer;
+    }
+    .name{
+        font-size: 20px;
+        padding-bottom: 3px ;
+    }
+    .info{
+        font-size: 18px;
+    }
+    img{
+        border-radius: 10px;
+        
+        width: 277px;
+    }
+    .price{
+        font-size: 20px;
+    }
+    
+
+</style>
+<body>
+    <div id="navbarcontainer">
+        <div id="logo"><img src="/logo/logovet.png" alt="MyFashionStore"></div>
+        <div id="navbar">
+            <ul>
+                <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Rubik+Glitch&family=Satisfy&family=Skranji&family=Smooch&display=swap" rel="stylesheet">
+               <li class="item"><a href="/index.html" >Home</a></li>
+                <li class="item"><a href="#servicess">Shop</a></li>
+                <li class="item"><a href="#aboutus">About us</a></li>
+                <li class="item"><a href="#contact">Contact us</a></li>
+                <li class="item"><a href="#animate">Order Now</a></li>
+                <li class="item"><a href="signin.html">Sign up</a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="full">
+    <div class="total" onclick="men1()">
+    <div class="jackets">
+        <img src="/accphotos/acc1.webp" alt="VETEMENTS">
+       
+    </div>
+    <span class="name"><b>Diva Fashion</b></span><br>
+    <span class="info"> Women Charm Bracelet</span><br>
+    <span class="price"><b>Rs.399 </b><strike> Rs.1995</strike> (80%off)
+    </span><br>
+    </div>
+    
+    
+    <div class="total" onclick="men2()">
+        <div class="jackets">
+            <img src="/accphotos/acc2.webp" alt="VETEMENTS">
+           
+        </div>
+        <span class="name"><b>EK</b></span><br>
+        <span class="info">Cuff Bracelet</span><br>
+        <span class="price"><b>Rs.2009 </b><strike> Rs.2999</strike> (33%off)
+        </span><br>
+    </div>
+    <div class="total" onclick="men3()">
+        <div class="jackets">
+            <img src="/accphotos/acc3.webp" alt="VETEMENTS">
+           
+        </div>
+        <span class="name"><b>Priyaasi</b></span><br>
+        <span class="info">Bangle style bracelet</span><br>
+        <span class="price"><b>Rs.990 </b><strike> Rs.3300</strike> (70%off)
+        </span><br>
+        </div>
+    <div class="total" onclick="men4()">
+     <div class="jackets">
+        <img src="/accphotos/acc4.webp" alt="VETEMENTS">
+               
+     </div>
+     <span class="name"><b>Ek</b></span><br>
+     <span class="info">Bangle style bracelet</span><br>
+     <span class="price"><b>Rs.249 </b><strike> Rs.999</strike>(Rs 750off)
+    </span><br>
+    </div>
+    <div class="total" onclick="men5()">
+    <div class="jackets">
+        <img src="/accphotos/acc5.jpg" alt="VETEMENTS">
+                   
+        </div>
+        <span class="name"><b>AMI</b></span><br>
+        <span class="info">Women Wraparound Bracelet</span><br>
+        <span class="price"><b>Rs.351 </b><strike> Rs.1950</strike> (82%off)
+        </span><br></div>
+</div>
+<div class="full">
+    <div class="total" onclick="men6()">
+    <div class="jackets">
+        <img src="/accphotos/acc6.webp" alt="VETEMENTS">
+       
+    </div>
+    <span class="name"><b>DressBerry</b></span><br>
+    <span class="info">Women Anologue Watch</span><br>
+    <span class="price"><b>Rs.1084 </b><strike> Rs.3099</strike> (65%off)
+    </span><br>
+    </div>
+    
+    
+    <div class="total" onclick="men7()">
+        <div class="jackets">
+            <img src="/accphotos/acc7.webp" alt="VETEMENTS">
+           
+        </div>
+        <span class="name"><b>Fire-Boltt</b></span><br>
+        <span class="info">Ninja pro max</span><br>
+        <span class="price"><b>Rs.1799 </b><strike> Rs.5999</strike> (Rs 4200 off)
+        </span><br>
+    </div>
+    <div class="total" onclick="men8()">
+        <div class="jackets">
+            <img src="/accphotos/acc8.webp" alt="VETEMENTS">
+           
+        </div>
+        <span class="name"><b>Fossil</b></span><br>
+        <span class="info">Women Watch</span><br>
+        <span class="price"><b>Rs.5497 </b><strike> Rs.10999</strike> (50%off)
+        </span><br>
+        </div>
+    <div class="total" onclick="men9()">
+     <div class="jackets">
+        <img src="/accphotos/acc9.webp" alt="VETEMENTS">
+               
+     </div>
+     <span class="name"><b>NOISE</b></span><br>
+     <span class="info">Unisex Watch</span><br>
+     <span class="price"><b>Rs.1799 </b><strike> Rs.4999</strike>(Rs 3200 off)
+    </span><br>
+    </div>
+    <div class="total" onclick="men10()">
+    <div class="jackets">
+        <img src="/accphotos/acc10.webp" alt="VETEMENTS">
+                   
+        </div>
+        <span class="name"><b>Daniel Klein</b></span><br>
+        <span class="info">Women Analogue Watch</span><br>
+        <span class="price"><b>Rs.2279 </b><strike> Rs.5050</strike> (55%off)
+        </span><br></div>
+</div>
+<div class="full">
+    <div class="total" onclick="men11()">
+    <div class="jackets">
+        <img src="/accphotos/acc11.webp" alt="VETEMENTS">
+       
+    </div>
+    <span class="name"><b>Roadster</b></span><br>
+    <span class="info">Stainless steel chain </span><br>
+    <span class="price"><b>Rs.341 </b><strike> Rs.1100</strike> (69%off)
+    </span><br>
+    </div>
+    
+    
+    <div class="total" onclick="men12()">
+        <div class="jackets">
+            <img src="/accphotos/acc12.webp" alt="VETEMENTS">
+           
+        </div>
+        <span class="name"><b>Yellow Chimes</b></span><br>
+        <span class="info">Stainless steel chain</span><br>
+        <span class="price"><b>Rs.444 </b><strike> Rs.1662</strike> (Rs 1218 off)
+        </span><br>
+    </div>
+    <div class="total" onclick="men13()">
+        <div class="jackets">
+            <img src="/accphotos/acc13.webp" alt="VETEMENTS">
+           
+        </div>
+        <span class="name"><b>Forever21</b></span><br>
+        <span class="info">Women Necklace</span><br>
+        <span class="price"><b>Rs.493 </b><strike> Rs.1049</strike> (53%off)
+        </span><br>
+        </div>
+    <div class="total" onclick="men14()">
+     <div class="jackets">
+        <img src="/accphotos/acc14.webp" alt="VETEMENTS">
+               
+     </div>
+     <span class="name"><b>YouBella</b></span><br>
+     <span class="info">Gold Plated Chain</span><br>
+     <span class="price"><b>Rs.342 </b><strike> Rs.1426</strike>(76%off)
+    </span><br>
+    </div>
+    <div class="total" onclick="men15()">
+    <div class="jackets">
+        <img src="/accphotos/acc15.webp" alt="VETEMENTS">
+                   
+        </div>
+        <span class="name"><b>SOHI</b></span><br>
+        <span class="info">Gold Plated Chain</span><br>
+        <span class="price"><b>Rs.338 </b><strike> Rs.650</strike> (48%off)
+        </span><br></div>
+</div>
+<script>
+    function men1()
+    {
+        window.location.href="acc1.html";
+    }
+    function men2()
+    {
+        window.location.href="acc2.html";
+    }
+    function men3()
+    {
+        window.location.href="acc3.html";
+    }
+    function men4()
+    {
+        window.location.href="acc4.html";
+    }
+    function men5()
+    {
+        window.location.href="acc5.html";
+    }
+    function men6()
+    {
+        window.location.href="acc6.html";
+    }
+    function men7()
+    {
+        window.location.href="acc7.html";
+    }
+    function men8()
+    {
+        window.location.href="acc8.html";
+    }
+    function men9()
+    {
+        window.location.href="acc9.html";
+    }
+    function men10()
+    {
+        window.location.href="acc10.html";
+    }
+    function men11()
+    {
+        window.location.href="acc11.html";
+    }
+    function men12()
+    {
+        window.location.href="acc12.html";
+    }
+    function men13()
+    {
+        window.location.href="acc13.html";
+    }
+    function men14()
+    {
+        window.location.href="acc14.html";
+    }
+    function men15()
+    {
+        window.location.href="acc15.html";
+    }
+</script>
+</body>
+</html>
